@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #261f1f;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserProfilePageController">
+   <children>
+      <AnchorPane prefHeight="194.0" prefWidth="1200.0" style="-fx-background-color: #b33037;">
+         <children>
+            <ImageView fitHeight="63.0" fitWidth="64.0" layoutX="14.0" layoutY="3.0" onMouseClicked="#handleHomeClick" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../images/home2.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="308.0" layoutY="9.0" prefHeight="112.0" prefWidth="585.0" text="QuickFoods Inc." textFill="#f2f2f2">
+               <font>
+                  <Font size="77.0" />
+               </font>
+            </Label>
+            <Label layoutX="434.0" layoutY="101.0" text="Rediscover Taste" textFill="WHITE">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Label>
+            <Label fx:id="closeLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="1122.0" layoutY="7.0" onMouseClicked="#handleCloseClick" prefHeight="46.0" prefWidth="64.0" style="-fx-background-color: #5e5b5b; -fx-background-radius: 2000; -fx-width: 500; -fx-cursor: hand;" text="X" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label fx:id="welcomePrompt" layoutX="14.0" layoutY="58.0" prefHeight="127.0" prefWidth="310.0" text="Welcome Siddeshwar" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="128.0" layoutY="228.0" prefHeight="547.0" prefWidth="970.0" style="-fx-background-color: #b33037; -fx-background-radius: 50px;">
+         <children>
+            <Label layoutX="49.0" layoutY="22.0" prefHeight="48.0" prefWidth="198.0" text="Name" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="49.0" layoutY="70.0" prefHeight="48.0" prefWidth="198.0" text="Phone Number" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="49.0" layoutY="118.0" prefHeight="48.0" prefWidth="198.0" text="Email ID" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="49.0" layoutY="166.0" prefHeight="48.0" prefWidth="198.0" text="Address:" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="49.0" layoutY="214.0" prefHeight="48.0" prefWidth="198.0" text="House Number" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="49.0" layoutY="262.0" prefHeight="48.0" prefWidth="198.0" text="Street" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="49.0" layoutY="310.0" prefHeight="48.0" prefWidth="198.0" text="Locality" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="49.0" layoutY="358.0" prefHeight="48.0" prefWidth="198.0" text="Pincode" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="deleteButton" layoutX="280.0" layoutY="470.0" mnemonicParsing="false" onAction="#handleDeleteClick" prefHeight="63.0" prefWidth="410.0" style="-fx-background-color: #5e5b5b; -fx-cursor: hand;" text="Delete Account Permanently" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            <Label fx:id="customerName" layoutX="312.0" layoutY="22.0" prefHeight="48.0" prefWidth="537.0" text="Name" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="customerPhoneNumber" layoutX="312.0" layoutY="70.0" prefHeight="48.0" prefWidth="537.0" text="Phone Number" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="customerEmailId" layoutX="312.0" layoutY="118.0" prefHeight="48.0" prefWidth="537.0" text="Email ID" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="houseNumber" layoutX="312.0" layoutY="214.0" prefHeight="48.0" prefWidth="198.0" text="House Number" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="street" layoutX="312.0" layoutY="262.0" prefHeight="48.0" prefWidth="537.0" text="Street" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="locality" layoutX="312.0" layoutY="310.0" prefHeight="48.0" prefWidth="537.0" text="Locality" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="pincode" layoutX="312.0" layoutY="358.0" prefHeight="48.0" prefWidth="537.0" text="Pincode" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="380.0" layoutY="416.0" onMouseClicked="#handleChangePasswordClick" style="-fx-cursor: hand;" text="Change Password" textFill="WHITE" underline="true">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

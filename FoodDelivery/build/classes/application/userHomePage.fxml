@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #261f1f;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserHomePageController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="217.0" prefHeight="89.0" prefWidth="1160.0" text="Popular Restaurants in Town " textFill="WHITE">
+         <font>
+            <Font size="61.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="194.0" prefWidth="1200.0" style="-fx-background-color: #b33037;">
+         <children>
+            <Label alignment="CENTER" layoutX="308.0" layoutY="9.0" prefHeight="112.0" prefWidth="585.0" text="QuickFoods Inc." textFill="#f2f2f2">
+               <font>
+                  <Font size="77.0" />
+               </font>
+            </Label>
+            <Label layoutX="434.0" layoutY="101.0" text="Rediscover Taste" textFill="WHITE">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Label>
+            <Label fx:id="closeLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="1122.0" layoutY="7.0" onMouseClicked="#handleCloseClick" prefHeight="46.0" prefWidth="64.0" style="-fx-background-color: #5e5b5b; -fx-background-radius: 2000; -fx-width: 500; -fx-cursor: hand;" text="X" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label fx:id="welcomeprompt" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="38.0" prefHeight="127.0" prefWidth="286.0" text="Welcome Harry Potter" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
+            <Button layoutX="983.0" layoutY="50.0" mnemonicParsing="false" onAction="#handleProfileClick" prefHeight="50.0" prefWidth="139.0" style="-fx-background-color: #b33037; -fx-border-width: 4px; -fx-border-color: #ffffff; -fx-cursor: hand; -fx-border-radius: 20px;" text="Profile" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="983.0" layoutY="121.0" mnemonicParsing="false" onAction="#handleLogoutClick" prefHeight="50.0" prefWidth="139.0" style="-fx-background-color: #b33037; -fx-border-width: 4px; -fx-border-color: #ffffff; -fx-cursor: hand; -fx-border-radius: 20px;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="37.0" layoutY="368.0" prefHeight="327.0" prefWidth="356.0" style="-fx-background-color: #b33037; -fx-background-radius: 50px; -fx-cursor: hand;">
+         <children>
+            <Label fx:id="restaurant1" alignment="CENTER" layoutX="40.0" layoutY="34.0" prefHeight="89.0" prefWidth="276.0" text="KFC" textFill="WHITE">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <Label fx:id="street1" alignment="CENTER" layoutX="40.0" layoutY="164.0" prefHeight="36.0" prefWidth="276.0" text="Bakers' Street" textFill="WHITE">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <Label fx:id="locality1" alignment="CENTER" layoutX="40.0" layoutY="214.0" prefHeight="36.0" prefWidth="276.0" text="Baking Colony" textFill="WHITE">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="422.0" layoutY="368.0" prefHeight="327.0" prefWidth="356.0" style="-fx-background-color: #b33037; -fx-background-radius: 50px; -fx-cursor: hand;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="25.0" prefHeight="100.0" prefWidth="276.0" text="Programmers' Hub" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="40.0" layoutY="164.0" prefHeight="36.0" prefWidth="276.0" text="10th Street" textFill="WHITE">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="40.0" layoutY="214.0" prefHeight="36.0" prefWidth="276.0" text="Main Colony" textFill="WHITE">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="811.0" layoutY="368.0" prefHeight="327.0" prefWidth="356.0" style="-fx-background-color: #b33037; -fx-background-radius: 50px; -fx-cursor: hand;">
+         <children>
+            <Label alignment="CENTER" layoutX="40.0" layoutY="36.0" prefHeight="89.0" prefWidth="276.0" text="Java Coffee Shop" textFill="WHITE">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="40.0" layoutY="164.0" prefHeight="36.0" prefWidth="276.0" text="11th Street" textFill="WHITE">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="40.0" layoutY="214.0" prefHeight="36.0" prefWidth="276.0" text="Main Colony" textFill="WHITE">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
